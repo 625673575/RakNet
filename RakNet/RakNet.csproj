@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E6EAE5D-EC5D-BBE1-813F-0950D015CE89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.6.0f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\PacketDataDefine.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\AddressOrGUID.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\BitStream.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\ByteQueue.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\Cell.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\ColumnDescriptor.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\CommandParserInterface.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\ConnectionAttemptResult.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\ConnectionGraph2.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\ConnectionState.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\DefaultMessageIDTypes.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\DirectoryDeltaTransfer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\DownloadCompleteStruct.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FLP_Printf.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FileList.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FileListNode.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FileListNodeContext.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FileListProgress.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FileListTransfer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FileListTransferCBInterface.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FileProgressStruct.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FilterQuery.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\FullyConnectedMesh2.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\IncrementalReadInterface.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\JoinTeamType.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\LogCommandParser.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\MessageFilter.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\MultilistType.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatPunchthroughClient.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatPunchthroughDebugInterface.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatPunchthroughDebugInterface_PacketLogger.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatPunchthroughDebugInterface_Printf.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatPunchthroughServer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatPunchthroughServerDebugInterface.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatPunchthroughServerDebugInterface_PacketLogger.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatPunchthroughServerDebugInterface_Printf.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatTypeDetectionClient.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NatTypeDetectionServer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NetworkIDManager.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\NetworkIDObject.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\OnFileStruct.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\OutOfBandIdentifiers.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\Packet.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PacketConsoleLogger.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PacketFileLogger.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PacketLogger.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PacketPriority.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PacketReliability.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PluginInterface2.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PluginReceiveResult.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PublicKey.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PublicKeyMode.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\PunchthroughConfiguration.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RNSPerSecondMetrics.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNet.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetBPlusTreeRow.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetGUID.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListCell.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListCellPointer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListColumnDescriptor.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListFileListNode.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListFilterQuery.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListRakNetGUID.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListRakString.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListSortQuery.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListSystemAddress.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListTableRow.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListUnsignedInt.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetListUnsignedShort.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetPINVOKE.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetPageRow.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakNetStatistics.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakPeer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakPeerInterface.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakString.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RakWString.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\ReadyEvent.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\ReadyEventSystemStatus.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\RemoteSystemIndex.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\Router2.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\Router2DebugInterface.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\Row.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__Cell_p_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__Cell_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__ColumnDescriptor_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__FilterQuery_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__Row_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__SortQuery_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_RakNetSocket2_p_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_RakNet__BitStream_p_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_RakNet__FullyConnectedMesh2__VerifiedJoinInProgressMember_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_RakNet__NatPunchthroughServer__ConnectionAttempt_p_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_RakNet__Router2__ConnectionRequestSystem_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_TeamMember_p_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_Team_p_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_RakNet__UDPProxyClient__ServerWithPing_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__ListT_RakNet__UDPProxyCoordinator__ServerWithPing_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__OrderedListT_RakNet__RakNetGUID_RakNet__RakNetGUID_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_DataStructures__QueueT_RakNet__SystemAddress_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_FILE.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_RNS2RecvStruct.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_RakNetSocket2.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_RakNet__ReadyEvent__RemoteSystem.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_RakNet__TCPInterface.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_ReliabilityLayer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_bool.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_double.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_p_RakNet__TM_Team.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_p_RakNet__TM_TeamMember.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_p_RakNet__TM_World.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_unsigned_char.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_unsigned_int.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_unsigned_long_long.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_unsigned_short.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_void.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SWIGTYPE_p_wchar_t.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SimpleMutex.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SocketDescriptor.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SortQuery.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\StartupResult.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\SystemAddress.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\TMTopology.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\TM_Team.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\TM_TeamMember.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\TM_World.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\Table.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\TeamManager.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\TeamSelection.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\ThreadsafePacketLogger.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\TransportInterface.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\UDPForwarder.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\UDPForwarderResult.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\UDPProxyClient.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\UDPProxyClientResultHandler.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\UDPProxyCoordinator.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\UDPProxyServer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\UDPProxyServerResultHandler.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\UnsignedIntPointer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\UnsignedShortPointer.cs" />
+    <Compile Include="Assets\SwigCSharpOutput\uint24_t.cs" />
+    <Compile Include="Assets\UDP.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

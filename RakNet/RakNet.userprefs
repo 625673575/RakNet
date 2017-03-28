@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SwigCSharpOutput\RakNetPINVOKE.cs">
+    <Files>
+      <File FileName="Assets\SwigCSharpOutput\AddressOrGUID.cs" Line="1" Column="1" />
+      <File FileName="Assets\UDP.cs" Line="1" Column="1" />
+      <File FileName="Assets\SwigCSharpOutput\BitStream.cs" Line="1" Column="1" />
+      <File FileName="Assets\SwigCSharpOutput\RakNetPINVOKE.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="D:\CommonCode\RakNet\RakNet\Assets\SwigCSharpOutput\AddressOrGUID.cs" line="106" column="1" />
+      <Breakpoint file="D:\CommonCode\RakNet\RakNet\Assets\SwigCSharpOutput\AddressOrGUID.cs" line="105" column="105" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D453E9BD-7B79-4FD5-9194-B28C305B7E9E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RakNetServer</RootNamespace>
+    <AssemblyName>RakNetServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HexDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HexDataForm.Designer.cs">
+      <DependentUpon>HexDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPC.cs" />
+    <Compile Include="ServerEntry.cs" />
+    <Compile Include="SwigFiles\AddressOrGUID.cs" />
+    <Compile Include="SwigFiles\BitStream.cs" />
+    <Compile Include="SwigFiles\ByteQueue.cs" />
+    <Compile Include="SwigFiles\Cell.cs" />
+    <Compile Include="SwigFiles\ColumnDescriptor.cs" />
+    <Compile Include="SwigFiles\CommandParserInterface.cs" />
+    <Compile Include="SwigFiles\ConnectionAttemptResult.cs" />
+    <Compile Include="SwigFiles\ConnectionGraph2.cs" />
+    <Compile Include="SwigFiles\ConnectionState.cs" />
+    <Compile Include="SwigFiles\DefaultMessageIDTypes.cs" />
+    <Compile Include="SwigFiles\DirectoryDeltaTransfer.cs" />
+    <Compile Include="SwigFiles\DownloadCompleteStruct.cs" />
+    <Compile Include="SwigFiles\FileList.cs" />
+    <Compile Include="SwigFiles\FileListNode.cs" />
+    <Compile Include="SwigFiles\FileListNodeContext.cs" />
+    <Compile Include="SwigFiles\FileListProgress.cs" />
+    <Compile Include="SwigFiles\FileListTransfer.cs" />
+    <Compile Include="SwigFiles\FileListTransferCBInterface.cs" />
+    <Compile Include="SwigFiles\FileProgressStruct.cs" />
+    <Compile Include="SwigFiles\FilterQuery.cs" />
+    <Compile Include="SwigFiles\FLP_Printf.cs" />
+    <Compile Include="SwigFiles\FullyConnectedMesh2.cs" />
+    <Compile Include="SwigFiles\IncrementalReadInterface.cs" />
+    <Compile Include="SwigFiles\JoinTeamType.cs" />
+    <Compile Include="SwigFiles\LogCommandParser.cs" />
+    <Compile Include="SwigFiles\MessageFilter.cs" />
+    <Compile Include="SwigFiles\MultilistType.cs" />
+    <Compile Include="SwigFiles\NatPunchthroughClient.cs" />
+    <Compile Include="SwigFiles\NatPunchthroughDebugInterface.cs" />
+    <Compile Include="SwigFiles\NatPunchthroughDebugInterface_PacketLogger.cs" />
+    <Compile Include="SwigFiles\NatPunchthroughDebugInterface_Printf.cs" />
+    <Compile Include="SwigFiles\NatPunchthroughServer.cs" />
+    <Compile Include="SwigFiles\NatPunchthroughServerDebugInterface.cs" />
+    <Compile Include="SwigFiles\NatPunchthroughServerDebugInterface_PacketLogger.cs" />
+    <Compile Include="SwigFiles\NatPunchthroughServerDebugInterface_Printf.cs" />
+    <Compile Include="SwigFiles\NatTypeDetectionClient.cs" />
+    <Compile Include="SwigFiles\NatTypeDetectionServer.cs" />
+    <Compile Include="SwigFiles\NetworkIDManager.cs" />
+    <Compile Include="SwigFiles\NetworkIDObject.cs" />
+    <Compile Include="SwigFiles\OnFileStruct.cs" />
+    <Compile Include="SwigFiles\OutOfBandIdentifiers.cs" />
+    <Compile Include="SwigFiles\Packet.cs" />
+    <Compile Include="SwigFiles\PacketConsoleLogger.cs" />
+    <Compile Include="SwigFiles\PacketFileLogger.cs" />
+    <Compile Include="SwigFiles\PacketLogger.cs" />
+    <Compile Include="SwigFiles\PacketPriority.cs" />
+    <Compile Include="SwigFiles\PacketReliability.cs" />
+    <Compile Include="SwigFiles\PluginInterface2.cs" />
+    <Compile Include="SwigFiles\PluginReceiveResult.cs" />
+    <Compile Include="SwigFiles\PublicKey.cs" />
+    <Compile Include="SwigFiles\PublicKeyMode.cs" />
+    <Compile Include="SwigFiles\PunchthroughConfiguration.cs" />
+    <Compile Include="SwigFiles\RakNet.cs" />
+    <Compile Include="SwigFiles\RakNetBPlusTreeRow.cs" />
+    <Compile Include="SwigFiles\RakNetGUID.cs" />
+    <Compile Include="SwigFiles\RakNetListCell.cs" />
+    <Compile Include="SwigFiles\RakNetListCellPointer.cs" />
+    <Compile Include="SwigFiles\RakNetListColumnDescriptor.cs" />
+    <Compile Include="SwigFiles\RakNetListFileListNode.cs" />
+    <Compile Include="SwigFiles\RakNetListFilterQuery.cs" />
+    <Compile Include="SwigFiles\RakNetListRakNetGUID.cs" />
+    <Compile Include="SwigFiles\RakNetListRakString.cs" />
+    <Compile Include="SwigFiles\RakNetListSortQuery.cs" />
+    <Compile Include="SwigFiles\RakNetListSystemAddress.cs" />
+    <Compile Include="SwigFiles\RakNetListTableRow.cs" />
+    <Compile Include="SwigFiles\RakNetListUnsignedInt.cs" />
+    <Compile Include="SwigFiles\RakNetListUnsignedShort.cs" />
+    <Compile Include="SwigFiles\RakNetPageRow.cs" />
+    <Compile Include="SwigFiles\RakNetPINVOKE.cs" />
+    <Compile Include="SwigFiles\RakNetStatistics.cs" />
+    <Compile Include="SwigFiles\RakPeer.cs" />
+    <Compile Include="SwigFiles\RakPeerInterface.cs" />
+    <Compile Include="SwigFiles\RakString.cs" />
+    <Compile Include="SwigFiles\RakWString.cs" />
+    <Compile Include="SwigFiles\ReadyEvent.cs" />
+    <Compile Include="SwigFiles\ReadyEventSystemStatus.cs" />
+    <Compile Include="SwigFiles\RemoteSystemIndex.cs" />
+    <Compile Include="SwigFiles\RNSPerSecondMetrics.cs" />
+    <Compile Include="SwigFiles\Router2.cs" />
+    <Compile Include="SwigFiles\Router2DebugInterface.cs" />
+    <Compile Include="SwigFiles\Row.cs" />
+    <Compile Include="SwigFiles\SimpleMutex.cs" />
+    <Compile Include="SwigFiles\SocketDescriptor.cs" />
+    <Compile Include="SwigFiles\SortQuery.cs" />
+    <Compile Include="SwigFiles\StartupResult.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_bool.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__Cell_p_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__Cell_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__ColumnDescriptor_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__FilterQuery_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__Row_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_DataStructures__Table__SortQuery_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_RakNetSocket2_p_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_RakNet__BitStream_p_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_RakNet__FullyConnectedMesh2__VerifiedJoinInProgressMember_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_RakNet__NatPunchthroughServer__ConnectionAttempt_p_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_RakNet__Router2__ConnectionRequestSystem_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_TeamMember_p_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_Team_p_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_RakNet__UDPProxyClient__ServerWithPing_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__ListT_RakNet__UDPProxyCoordinator__ServerWithPing_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__OrderedListT_RakNet__RakNetGUID_RakNet__RakNetGUID_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_DataStructures__QueueT_RakNet__SystemAddress_t.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_double.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_FILE.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_p_RakNet__TM_Team.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_p_RakNet__TM_TeamMember.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_p_RakNet__TM_World.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_RakNetSocket2.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_RakNet__ReadyEvent__RemoteSystem.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_RakNet__TCPInterface.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_ReliabilityLayer.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_RNS2RecvStruct.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_unsigned_char.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_unsigned_int.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_unsigned_long_long.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_unsigned_short.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_void.cs" />
+    <Compile Include="SwigFiles\SWIGTYPE_p_wchar_t.cs" />
+    <Compile Include="SwigFiles\SystemAddress.cs" />
+    <Compile Include="SwigFiles\Table.cs" />
+    <Compile Include="SwigFiles\TeamManager.cs" />
+    <Compile Include="SwigFiles\TeamSelection.cs" />
+    <Compile Include="SwigFiles\ThreadsafePacketLogger.cs" />
+    <Compile Include="SwigFiles\TMTopology.cs" />
+    <Compile Include="SwigFiles\TM_Team.cs" />
+    <Compile Include="SwigFiles\TM_TeamMember.cs" />
+    <Compile Include="SwigFiles\TM_World.cs" />
+    <Compile Include="SwigFiles\TransportInterface.cs" />
+    <Compile Include="SwigFiles\UDPForwarder.cs" />
+    <Compile Include="SwigFiles\UDPForwarderResult.cs" />
+    <Compile Include="SwigFiles\UDPProxyClient.cs" />
+    <Compile Include="SwigFiles\UDPProxyClientResultHandler.cs" />
+    <Compile Include="SwigFiles\UDPProxyCoordinator.cs" />
+    <Compile Include="SwigFiles\UDPProxyServer.cs" />
+    <Compile Include="SwigFiles\UDPProxyServerResultHandler.cs" />
+    <Compile Include="SwigFiles\uint24_t.cs" />
+    <Compile Include="SwigFiles\UnsignedIntPointer.cs" />
+    <Compile Include="SwigFiles\UnsignedShortPointer.cs" />
+    <Compile Include="TestSendString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestSendString.Designer.cs">
+      <DependentUpon>TestSendString.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HexDataForm.resx">
+      <DependentUpon>HexDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TestSendString.resx">
+      <DependentUpon>TestSendString.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RakNet.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

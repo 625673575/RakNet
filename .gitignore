@@ -13,10 +13,19 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
+*.obj
+*.log
+*.tlog
+*.pdb
+*.meta
+*.o
+*.recipe
+/.vs
+*/Debug/* 
+*/Release/*
+/RakNet/Library
 # Windows shortcuts
 *.lnk
-
 # =========================
 # Operating System Files
 # =========================
