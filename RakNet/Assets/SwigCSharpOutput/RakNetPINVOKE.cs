@@ -82,7 +82,7 @@ namespace RakNet
 
             [global::System.Runtime.InteropServices.DllImport(LibName,  CallingConvention = CallingConvention.Cdecl)]
             public static extern void SWIGRegisterStringCallback_RakNet(SWIGStringDelegate stringDelegate);
-
+            [AOT.MonoPInvokeCallback(typeof(SWIGStringDelegate))]
             static string CreateString(string cString)
             {
                 return cString;
