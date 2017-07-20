@@ -3138,7 +3138,8 @@ void ReliabilityLayer::InsertIntoSplitPacketList( InternalPacket * internalPacke
 	}
 #else
 	// Insert the packet into the SplitPacketChannel
-	splitPacketChannelList[index]->splitPacketList.Insert(internalPacket, __FILE__, __LINE__ );
+	//splitPacketChannelList[index]->splitPacketList.Insert(internalPacket, __FILE__, __LINE__ );
+	splitPacketChannelList[index]->splitPacketList.Replace(internalPacket, 0, internalPacket->splitPacketIndex, __FILE__, __LINE__);
 	splitPacketChannelList[index]->lastUpdateTime=time;
 
 	// If the index is 0, then this is the first packet. Record this so it can be returned to the user with download progress
